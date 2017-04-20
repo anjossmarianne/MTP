@@ -1,22 +1,13 @@
 #include <stdio.h>
-
-void safeFlush() {
-    char c;
-    while((c = getchar()) != EOF && c != '\n');
-}
-
+#include <stdlib.h>
+#include <time.h>
 int main()
 {
-    srand (time(0));
-    int n;
-    float aleatorio;
-    for (n=0; n<10; n++) {
-
-
-    }
-
-
-    printf ("%g\n", aleatorio);
+    srand(time(0));
+    int num;
+    scanf("%i", &num);
+    printf("%d", num+rand()%10);
 
     return 0;
+
 }
